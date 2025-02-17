@@ -1,9 +1,10 @@
 const express = require("express");
 const axios = require("axios");
 const cors = require("cors");
+require("dotenv").config();
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5000;
 
 // Enable CORS to allow frontend to call this backend
 app.use(cors());
@@ -28,7 +29,7 @@ app.get("/geocode", async (req, res) => {
         res.json({
             lat: location.lat,
             lon: location.lon,
-            display_name: location.display_name
+            display_name: location.display_name,
         });
 
     } catch (error) {
