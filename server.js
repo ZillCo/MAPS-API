@@ -39,6 +39,6 @@ app.get("/geocode", async (req, res) => {
 
 // Start the server
 app.listen(PORT, () => {
-    console.log(`🚀 Server is running on https://zillco.github.io/MAPS-API/:${PORT}`);
+    console.log(`🚀 Server is running on https://maps-api-zhqt.onrender.com:${PORT}`);
 });
 >>>>>>> e080286 (Initial commit)
