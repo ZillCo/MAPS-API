@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         try {
             status.textContent = "🔍 Searching...";
-            const response = await fetch(`http://localhost:5000/geocode?address=${encodeURIComponent(searchBox)}`);
+            const response = await fetch(`https://your-project.onrender.com/geocode?address=${encodeURIComponent(searchBox)}`);
             const data = await response.json();
 
             if (data.error) {
