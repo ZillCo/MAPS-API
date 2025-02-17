@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
             status.textContent = "🔍 Searching...";
 
             // Make sure to use the correct API URL (online)
-            const response = await fetch(`https://https://maps-api-zhqt.onrender.com/geocode?address=${encodeURIComponent(searchBox)}`);
+            const response = await fetch(`https://maps-api-zhqt.onrender.com/geocode?address=${encodeURIComponent(searchBox)}`);
             const data = await response.json();
 
             if (data.error) {
