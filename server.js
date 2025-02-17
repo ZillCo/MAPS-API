@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const express = require("express");
 const axios = require("axios");
 const cors = require("cors");
@@ -41,4 +40,3 @@ app.get("/geocode", async (req, res) => {
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
->>>>>>> e080286 (Initial commit)
