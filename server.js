@@ -4,7 +4,7 @@ const axios = require("axios");
 const cors = require("cors");
 
 const app = express();
-const PORT = 5000;
+const port = process.env.PORT || 10000;
 
 // Enable CORS to allow frontend to call this backend
 app.use(cors());
@@ -38,7 +38,7 @@ app.get("/geocode", async (req, res) => {
 });
 
 // Start the server
-app.listen(PORT, () => {
-    console.log(`🚀 Server is running on https://maps-api-zhqt.onrender.com:${PORT}`);
+app.listen(port, () => {
+    console.log(`Server is running on port ${port}`);
 });
 >>>>>>> e080286 (Initial commit)
